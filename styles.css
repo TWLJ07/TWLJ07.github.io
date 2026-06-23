@@ -543,6 +543,46 @@ img {
     background: rgba(103, 232, 249, 0.06);
 }
 
+.project-detailed {
+    padding: 28px;
+    overflow: visible;
+}
+
+.project-content {
+    display: grid;
+    gap: 24px;
+}
+
+.project-description {
+    color: var(--muted);
+    line-height: 1.75;
+    font-size: 1rem;
+    margin: 0;
+    max-width: 90ch;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(163, 178, 207, 0.16);
+    background: rgba(255, 255, 255, 0.02);
+    display: block;
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.gallery-image:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(103, 232, 249, 0.12);
+}
+
 .contact-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
