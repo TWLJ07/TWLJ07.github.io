@@ -38,13 +38,43 @@
                         <p class="project-description">
                             Designed and prototyped an autonomous drone-glider system capable of transporting and deploying drones from within its hull. The glider featured fixed wings, an electric propulsion system, and a pressure-rated end cap equipped with a pressure relief valve (PRV) and external cable interfaces. Internally, the system integrated a battery pack, Wi-Fi communications PCB, and power distribution PCB to support onboard operations. A custom drone deployment mechanism was developed, consisting of an actuator-driven transfer plate that positions drones onto an elevator system, which then raises them out of the hull for launch.
                         </p>
-                        <div class="project-gallery">
-                            <img src="assets/projects/glider/glider-1.png" alt="Glider assembly overview" class="gallery-image" />
-                            <img src="assets/projects/glider/glider-2.png" alt="Drone deployment mechanism" class="gallery-image" />
-                            <img src="assets/projects/glider/glider-3.png" alt="Pressure-rated end cap detail" class="gallery-image" />
-                            <img src="assets/projects/glider/glider-4.png" alt="Interior electronics layout" class="gallery-image" />
-                            <img src="assets/projects/glider/glider-5.png" alt="Elevator and transfer system" class="gallery-image" />
-                            <img src="assets/projects/glider/glider-6.png" alt="Full system assembly" class="gallery-image" />
+                        <div class="project-gallery" aria-label="Autonomous glider project photo gallery">
+                            <figure class="gallery-item">
+                                <button class="gallery-trigger" type="button" data-caption="Front profile and main hull geometry.">
+                                    <img src="assets/projects/glider/GLIDDER_FRONTvIEW.png" alt="Front view of the glider with nose profile" class="gallery-image" />
+                                </button>
+                                <figcaption class="gallery-caption">Front profile and main hull geometry.</figcaption>
+                            </figure>
+                            <figure class="gallery-item">
+                                <button class="gallery-trigger" type="button" data-caption="Rear view with control surface layout.">
+                                    <img src="assets/projects/glider/GLIDDER_BACKVIEW.png" alt="Rear view of the glider hull and control surfaces" class="gallery-image" />
+                                </button>
+                                <figcaption class="gallery-caption">Rear view with control surface layout.</figcaption>
+                            </figure>
+                            <figure class="gallery-item">
+                                <button class="gallery-trigger" type="button" data-caption="Internal hull structure and component arrangement.">
+                                    <img src="assets/projects/glider/INSIDE_HULL.png" alt="Inside hull showing internal mechanical layout" class="gallery-image" />
+                                </button>
+                                <figcaption class="gallery-caption">Internal hull structure and component arrangement.</figcaption>
+                            </figure>
+                            <figure class="gallery-item">
+                                <button class="gallery-trigger" type="button" data-caption="Power distribution and battery integration.">
+                                    <img src="assets/projects/glider/PCB_AND_BATTERY.png" alt="Internal PCB stack and battery pack arrangement" class="gallery-image" />
+                                </button>
+                                <figcaption class="gallery-caption">Power distribution and battery integration.</figcaption>
+                            </figure>
+                            <figure class="gallery-item">
+                                <button class="gallery-trigger" type="button" data-caption="Pressure-rated end cap and external interfaces.">
+                                    <img src="assets/projects/glider/ENDCAP_VIEW.png" alt="Pressure-rated end cap and external interfaces" class="gallery-image" />
+                                </button>
+                                <figcaption class="gallery-caption">Pressure-rated end cap and external interfaces.</figcaption>
+                            </figure>
+                            <figure class="gallery-item">
+                                <button class="gallery-trigger" type="button" data-caption="Actuator-driven launch transfer and elevator mechanism.">
+                                    <img src="assets/projects/glider/DRONE_LAUNCH_SYSTEM.png" alt="Drone launch transfer and elevator mechanism" class="gallery-image" />
+                                </button>
+                                <figcaption class="gallery-caption">Actuator-driven launch transfer and elevator mechanism.</figcaption>
+                            </figure>
                         </div>
                     </div>
                 </article>
@@ -74,6 +104,14 @@
                 <a href="work.html">Work</a>
             </div>
         </footer>
+    </div>
+
+    <div class="lightbox" id="project-lightbox" aria-hidden="true" role="dialog" aria-label="Expanded project image">
+        <div class="lightbox-inner">
+            <button class="lightbox-close" type="button" aria-label="Close image viewer">Close</button>
+            <img class="lightbox-image" src="" alt="" />
+            <p class="lightbox-caption"></p>
+        </div>
     </div>
 </body>
 </html>
