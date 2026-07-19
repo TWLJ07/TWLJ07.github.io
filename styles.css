@@ -551,6 +551,8 @@ img {
 .project-content {
     display: grid;
     gap: 24px;
+    justify-items: center;
+    text-align: center;
 }
 
 .project-description {
@@ -565,6 +567,7 @@ img {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
+    width: min(100%, 980px);
 }
 
 .feature-block {
@@ -572,6 +575,7 @@ img {
     border-radius: var(--radius-lg);
     border: 1px solid rgba(163, 178, 207, 0.14);
     background: rgba(255, 255, 255, 0.03);
+    text-align: left;
 }
 
 .feature-block h3 {
@@ -594,12 +598,14 @@ img {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
     margin-top: 16px;
+    width: min(100%, 980px);
 }
 
 .gallery-item {
     margin: 0;
     display: grid;
     gap: 10px;
+    justify-items: center;
 }
 
 .gallery-trigger {
