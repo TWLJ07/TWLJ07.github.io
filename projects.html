@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Projects page for Tucker Johnson with mechanical and software project previews." />
+    <meta name="description" content="Projects page for Tucker Johnson with an autonomous marine monitoring buoy and software project previews." />
     <title>Tucker Johnson | Projects</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
@@ -30,50 +30,123 @@
                 <div class="section-heading">
                     <div>
                         <p class="section-kicker">Mechanical work</p>
-                        <h2>Autonomous drone-glider deployment system</h2>
+                        <h2>Autonomous Marine Monitoring Buoy</h2>
                     </div>
                 </div>
                 <article class="project-card glass-card project-detailed">
                     <div class="project-content">
                         <p class="project-description">
-                            Designed and prototyped an autonomous drone-glider system capable of transporting and deploying drones from within its hull. The glider featured fixed wings, an electric propulsion system, and a pressure-rated end cap equipped with a pressure relief valve (PRV) and external cable interfaces. Internally, the system integrated a battery pack, Wi-Fi communications PCB, and power distribution PCB to support onboard operations. A custom drone deployment mechanism was developed, consisting of an actuator-driven transfer plate that positions drones onto an elevator system, which then raises them out of the hull for launch.
+                            This project is a conceptual mechanical design of an autonomous marine buoy developed to monitor localized marine environments for fish and lobster activity. The system integrates acoustic sensing, onboard data storage, wireless communication, and a sealed pressure-resistant housing into a compact, field-deployable platform. The design emphasizes reliability in harsh marine environments through robust sealing, modular internal components, and maintainable assemblies while supporting long-term underwater data collection.
                         </p>
-                        <div class="project-gallery" aria-label="Autonomous glider project photo gallery">
+                        <div class="project-features">
+                            <div class="feature-block">
+                                <h3>Pressure Relief Valve</h3>
+                                <ul>
+                                    <li>Integrated pressure relief valve for internal pressure management.</li>
+                                    <li>Cracking pressure: <strong>15 psi</strong>.</li>
+                                    <li>Vent rate: <strong>5 L/min</strong>.</li>
+                                    <li>Protects internal electronics from pressure buildup while maintaining enclosure integrity.</li>
+                                </ul>
+                            </div>
+                            <div class="feature-block">
+                                <h3>Hydrophone</h3>
+                                <ul>
+                                    <li>High-frequency underwater acoustic sensor for marine monitoring.</li>
+                                    <li>Frequency range: <strong>10 Hz – 200 kHz</strong>.</li>
+                                    <li>Rated for operation at depths of <strong>up to 100 m</strong>.</li>
+                                    <li>Enables acoustic detection and monitoring of marine life and underwater activity.</li>
+                                </ul>
+                            </div>
+                            <div class="feature-block">
+                                <h3>Battery System</h3>
+                                <ul>
+                                    <li>High-capacity <strong>96-cell battery pack</strong> providing long-duration operation.</li>
+                                    <li>Mounted securely within the pressure housing for optimal weight distribution and protection.</li>
+                                </ul>
+                            </div>
+                            <div class="feature-block">
+                                <h3>Electronics Chassis</h3>
+                                <ul>
+                                    <li>Modular internal electronics assembly containing eight 64 GB SD cards for onboard data storage.</li>
+                                    <li>WiFi PCB for wireless communication and data retrieval.</li>
+                                    <li>General/Power PCB for power distribution and system connectivity.</li>
+                                    <li>Designed for organized cable routing and straightforward maintenance.</li>
+                                </ul>
+                            </div>
+                            <div class="feature-block">
+                                <h3>Pressure Housing</h3>
+                                <ul>
+                                    <li>Cylindrical waterproof housing that protects the battery pack and electronics chassis.</li>
+                                    <li>Sealed using precision-machined endcaps and O-ring interfaces to prevent water ingress.</li>
+                                    <li>Integrated handling rings simplify deployment and recovery operations.</li>
+                                    <li>Endcaps provide mounting locations for the PRV, hydrophone, McCartney power connector, and anode.</li>
+                                </ul>
+                            </div>
+                            <div class="feature-block">
+                                <h3>Buoy Assembly</h3>
+                                <ul>
+                                    <li>Floating buoy structure designed to support the underwater housing while maintaining stable surface positioning.</li>
+                                    <li>Protective guard surrounding the hydrophone to reduce the risk of impact damage during deployment and retrieval.</li>
+                                    <li>Surface-mounted navigation light for improved visibility.</li>
+                                    <li>External WiFi antenna positioned above the waterline to enable wireless communication when the buoy is surfaced.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="project-gallery" aria-label="Autonomous marine monitoring buoy photo gallery">
                             <figure class="gallery-item">
-                                <button class="gallery-trigger" type="button" data-caption="Front profile and main hull geometry.">
-                                    <img src="assets/projects/glider/GLIDDER_FRONTvIEW.png" alt="Front view of the glider with nose profile" class="gallery-image" />
+                                <button class="gallery-trigger" type="button">
+                                    <img src="assets/projects/glider/BUOY_1.png" alt="Autonomous marine monitoring buoy" class="gallery-image" />
                                 </button>
-                                <figcaption class="gallery-caption">Front profile and main hull geometry.</figcaption>
                             </figure>
                             <figure class="gallery-item">
-                                <button class="gallery-trigger" type="button" data-caption="Rear view with control surface layout.">
-                                    <img src="assets/projects/glider/GLIDDER_BACKVIEW.png" alt="Rear view of the glider hull and control surfaces" class="gallery-image" />
+                                <button class="gallery-trigger" type="button">
+                                    <img src="assets/projects/glider/BUOY_2.png" alt="Autonomous marine monitoring buoy" class="gallery-image" />
                                 </button>
-                                <figcaption class="gallery-caption">Rear view with control surface layout.</figcaption>
                             </figure>
                             <figure class="gallery-item">
-                                <button class="gallery-trigger" type="button" data-caption="Internal hull structure and component arrangement.">
-                                    <img src="assets/projects/glider/INSIDE_HULL.png" alt="Inside hull showing internal mechanical layout" class="gallery-image" />
+                                <button class="gallery-trigger" type="button">
+                                    <img src="assets/projects/glider/PRV_1.png" alt="Autonomous marine monitoring buoy" class="gallery-image" />
                                 </button>
-                                <figcaption class="gallery-caption">Internal hull structure and component arrangement.</figcaption>
                             </figure>
                             <figure class="gallery-item">
-                                <button class="gallery-trigger" type="button" data-caption="Power distribution and battery integration.">
-                                    <img src="assets/projects/glider/PCB_AND_BATTERY.png" alt="Internal PCB stack and battery pack arrangement" class="gallery-image" />
+                                <button class="gallery-trigger" type="button">
+                                    <img src="assets/projects/glider/PRV_2.png" alt="Autonomous marine monitoring buoy" class="gallery-image" />
                                 </button>
-                                <figcaption class="gallery-caption">Power distribution and battery integration.</figcaption>
                             </figure>
                             <figure class="gallery-item">
-                                <button class="gallery-trigger" type="button" data-caption="Pressure-rated end cap and external interfaces.">
-                                    <img src="assets/projects/glider/ENDCAP_VIEW.png" alt="Pressure-rated end cap and external interfaces" class="gallery-image" />
+                                <button class="gallery-trigger" type="button">
+                                    <img src="assets/projects/glider/HYDROPHONE.png" alt="Autonomous marine monitoring buoy" class="gallery-image" />
                                 </button>
-                                <figcaption class="gallery-caption">Pressure-rated end cap and external interfaces.</figcaption>
                             </figure>
                             <figure class="gallery-item">
-                                <button class="gallery-trigger" type="button" data-caption="Actuator-driven launch transfer and elevator mechanism.">
-                                    <img src="assets/projects/glider/DRONE_LAUNCH_SYSTEM.png" alt="Drone launch transfer and elevator mechanism" class="gallery-image" />
+                                <button class="gallery-trigger" type="button">
+                                    <img src="assets/projects/glider/BATTERY_PACK.png" alt="Autonomous marine monitoring buoy" class="gallery-image" />
                                 </button>
-                                <figcaption class="gallery-caption">Actuator-driven launch transfer and elevator mechanism.</figcaption>
+                            </figure>
+                            <figure class="gallery-item">
+                                <button class="gallery-trigger" type="button">
+                                    <img src="assets/projects/glider/CHASSIS_1.png" alt="Autonomous marine monitoring buoy" class="gallery-image" />
+                                </button>
+                            </figure>
+                            <figure class="gallery-item">
+                                <button class="gallery-trigger" type="button">
+                                    <img src="assets/projects/glider/CHASSIS_2.png" alt="Autonomous marine monitoring buoy" class="gallery-image" />
+                                </button>
+                            </figure>
+                            <figure class="gallery-item">
+                                <button class="gallery-trigger" type="button">
+                                    <img src="assets/projects/glider/HOUSING_1.png" alt="Autonomous marine monitoring buoy" class="gallery-image" />
+                                </button>
+                            </figure>
+                            <figure class="gallery-item">
+                                <button class="gallery-trigger" type="button">
+                                    <img src="assets/projects/glider/HOUSING_2.png" alt="Autonomous marine monitoring buoy" class="gallery-image" />
+                                </button>
+                            </figure>
+                            <figure class="gallery-item">
+                                <button class="gallery-trigger" type="button">
+                                    <img src="assets/projects/glider/HOUSING_3.png" alt="Autonomous marine monitoring buoy" class="gallery-image" />
+                                </button>
                             </figure>
                         </div>
                     </div>
