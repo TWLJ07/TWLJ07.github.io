@@ -6,13 +6,6 @@ for (const [index, mount] of [...document.querySelectorAll('#hero-drone, #journe
   clone.querySelectorAll('[fill]').forEach(node => { node.setAttribute('fill', node.getAttribute('fill').replace(/url\(#([^)]+)\)/g, `url(#$1-${index})`)); });
   mount.append(clone);
 }
-const gallery = document.querySelector('#buoy-gallery');
-const images = [ ['BUOY_2', 'Buoy assembly, alternate view'], ['PRV_1', 'Pressure relief valve'], ['PRV_2', 'Pressure relief valve, alternate view'], ['HYDROPHONE', 'Hydrophone'], ['BATTERY_PACK', '96-cell battery pack'], ['CHASSIS_1', 'Electronics chassis'], ['CHASSIS_2', 'Electronics chassis, alternate view'], ['HOUSING_1', 'Pressure housing'], ['HOUSING_2', 'Pressure housing, alternate view'], ['HOUSING_3', 'Pressure housing detail'] ];
-images.forEach(([file, caption]) => {
-  const button = document.createElement('button');
-  button.type = 'button'; button.dataset.image = `assets/projects/glider/${file}.png`; button.dataset.caption = caption; button.setAttribute('aria-label', `Enlarge ${caption.toLowerCase()}`);
-  const img = document.createElement('img'); img.src = button.dataset.image; img.alt = caption; img.loading = 'lazy'; button.append(img); gallery.append(button);
-});
 const viewer = document.querySelector('#image-viewer');
 let lastTrigger;
 document.addEventListener('click', event => {
