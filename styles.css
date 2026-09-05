@@ -1001,3 +1001,18 @@ footer>span:nth-child(2) {
     .hero-actions { gap: 18px; }
     .contact h2 { font-size: 39px; }
 }
+
+.project-details {
+    margin: 18px 0;
+    padding-left: 18px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.85;
+}
+.project-details li + li {
+    margin-top: 13px;
+}
+.project-details strong {
+    color: var(--text);
+    font-weight: 500;
+}

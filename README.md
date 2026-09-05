@@ -10,4 +10,4 @@ Single-page static portfolio for GitHub Pages. Open `index.html` or serve this d
 
 The resume is intentionally marked unavailable because no resume file was supplied. To enable it, add `resume.pdf` and replace the unavailable resume element with an anchor using `href="resume.pdf" download`.
 
-The drone is an original inline SVG illustration, not a model of a completed project. The drone visualization project is explicitly marked as a coming-soon concept. Project information is preserved from the original site.
+The drone is an original inline SVG illustration, not a model of a completed project. The project section includes the drone photogrammetry platform, conceptual marine buoy, SD card and battery pack test fixtures, and NavBot, using the supplied portfolio descriptions. Additional project photos and resume/portfolio PDFs are pending.

@@ -75,7 +75,7 @@
 <p class="eyebrow">01 / SELECTED WORK</p>
 <h2>Ideas taking flight<span>.</span>
 </h2>
-<p class="muted">From beneath the surface to a different point of view.</p>
+<p class="muted">From aerial reconstruction and marine sensing to test hardware and autonomous robotics.</p>
 </div>
 <div class="flight-path" aria-hidden="true">
 <div class="flight-progress">
@@ -83,64 +83,102 @@
 <div class="journey-drone" id="journey-drone">
 </div>
 </div>
-<article class="project project-left" id="marine-buoy">
-<span class="waypoint" aria-hidden="true">
-</span>
+<article class="project project-left" id="drone-simulation">
+<span class="waypoint" aria-hidden="true"></span>
 <div class="project-card">
-<div class="card-topline">
-<span>01 / MECHANICAL DESIGN</span>
-<span class="pill">CONCEPT DESIGN</span>
+<div class="card-topline"><span>01 / SOFTWARE + DRONES</span><span class="pill violet">PHOTOGRAMMETRY</span></div>
+<div class="terrain-art" aria-hidden="true">
+<div class="terrain-grid"></div><span class="terrain-marker">+</span>
+<span class="terrain-caption">FROM DRONE VIDEO TO 3D RECONSTRUCTION</span>
 </div>
-<button class="project-image" data-image="assets/projects/glider/BUOY_1.png" data-caption="Autonomous marine monitoring buoy — overall assembly" aria-label="Enlarge marine monitoring buoy assembly">
-<img src="assets/projects/glider/BUOY_1.png" alt="CAD model of the autonomous marine monitoring buoy" loading="lazy">
-<span>VIEW ASSEMBLY ↗</span>
-</button>
 <div class="project-copy">
-<h3>Listening beneath<br>the surface.</h3>
-<p>A conceptual autonomous marine buoy for monitoring fish and lobster activity. Acoustic sensing, onboard storage, and wireless communication in a sealed, field-deployable platform.</p>
-<div class="tags">
-<span>SolidWorks</span>
-<span>Mechanical design</span>
-<span>Ocean technology</span>
-</div>
+<h3>Drone Video to 3D Simulation Software</h3>
+<p>A full-stack photogrammetry platform that transforms raw drone video into interactive 3D reconstructions, covering video upload, processing, visualization, analysis, and export.</p>
+<div class="tags"><span>Python</span><span>TypeScript</span><span>React</span><span>Three.js</span><span>FastAPI</span><span>SQLite</span><span>OpenCV</span><span>FFmpeg</span><span>COLMAP</span><span>CUDA</span></div>
 <details>
-<summary>Explore the design <span>+</span>
-</summary>
-<p>A modular electronics chassis and 96-cell battery pack sit inside an O-ring-sealed pressure housing. The design includes a 15 psi pressure relief valve and a hydrophone specified for 10 Hz–200 kHz sensing at depths up to 100 m.</p>
-<p>Eight 64 GB SD cards provide onboard storage. A surface antenna, navigation light, handling rings, and hydrophone guard support deployment and retrieval.</p>
-<div class="gallery" id="buoy-gallery">
-</div>
+<summary>Explore the software <span aria-hidden="true">+</span></summary>
+<ul class="project-details">
+<li><strong>Automated vision pipeline.</strong> FFmpeg, OpenCV, and COLMAP handle frame extraction, image-quality filtering, feature detection and matching, camera pose estimation, sparse reconstruction, and CUDA-accelerated dense reconstruction.</li>
+<li><strong>Reconstruction outputs.</strong> Sparse and dense point clouds, CPU-generated sparse meshes, and Poisson dense meshes have dedicated processing timelines and quality controls for each stage.</li>
+<li><strong>Interactive analysis.</strong> A React and Three.js environment supports camera trajectories, real-world scaling, distance and area measurements, elevation analysis, point inspection, annotations, and point-cloud cleanup.</li>
+<li><strong>Smart Retry.</strong> The system analyzes image registration, feature coverage, verified-match connectivity, reconstruction quality, and previous retry results to diagnose failed or partial reconstructions and selectively rerun only the necessary stages.</li>
+<li><strong>Project and job management.</strong> A FastAPI and SQLite backend manages projects, reconstruction jobs, processing state, artifacts, and reconstruction history.</li>
+<li><strong>Comparison and export.</strong> Tools compare reconstruction runs and export point clouds, meshes, measurements, maps, and reconstruction reports.</li>
+</ul>
 </details>
 </div>
 </div>
-<span class="node-label">ACOUSTIC SENSING<br>MECHANICAL SYSTEMS</span>
+<span class="node-label">AERIAL RECONSTRUCTION<br>COMPUTER VISION</span>
 </article>
-<article class="project project-right">
-<span class="waypoint" aria-hidden="true">
-</span>
-<span class="node-label">AERIAL PERSPECTIVES<br>SOFTWARE SYSTEMS</span>
+<article class="project project-right" id="marine-buoy">
+<span class="waypoint" aria-hidden="true"></span>
+<span class="node-label">ACOUSTIC SENSING<br>MECHANICAL SYSTEMS</span>
 <div class="project-card">
-<div class="card-topline">
-<span>02 / SOFTWARE + DRONES</span>
-<span class="pill violet">COMING SOON</span>
-</div>
-<div class="terrain-art" aria-hidden="true">
-<div class="terrain-grid">
-</div>
-<span class="terrain-marker">+</span>
-<span class="terrain-caption">RECONSTRUCTING A NEW PERSPECTIVE</span>
-</div>
+<div class="card-topline"><span>02 / MECHANICAL DESIGN</span><span class="pill">CONCEPT DESIGN</span></div>
+<button class="project-image" type="button" data-image="assets/projects/glider/BUOY_1.png" data-caption="Autonomous marine monitoring buoy &mdash; overall assembly" aria-label="Enlarge marine monitoring buoy assembly">
+<img src="assets/projects/glider/BUOY_1.png" alt="CAD model of the autonomous marine monitoring buoy" loading="lazy">
+<span>VIEW ASSEMBLY &#8599;</span>
+</button>
 <div class="project-copy">
-<h3>A new dimension<br>of exploration.</h3>
-<p>Turning drone photos and video into a 3D visualization. An aerial point of view that lets you look around and explore the surrounding environment.</p>
-<div class="tags">
-<span>Drone imagery</span>
-<span>3D visualization</span>
-<span>Software</span>
+<h3>Marine Monitoring Buoy</h3>
+<p>A conceptual autonomous marine monitoring buoy designed in SolidWorks for localized fish and lobster habitat monitoring through underwater acoustic sensing.</p>
+<div class="tags"><span>SolidWorks</span><span>Mechanical design</span><span>Acoustic sensing</span><span>Subsystem integration</span></div>
+<details>
+<summary>Explore the design <span aria-hidden="true">+</span></summary>
+<ul class="project-details">
+<li><strong>Sealed pressure housing.</strong> O-ring endcaps protect the battery system, electronics chassis, and data-storage hardware inside the underwater housing.</li>
+<li><strong>Modular internal layout.</strong> A high-capacity battery pack, WiFi PCB, power and control electronics, and multiple SD cards provide power, communication, and onboard acoustic data storage.</li>
+<li><strong>Integrated endcaps.</strong> The hydrophone, pressure relief valve, electrical connections, and anode are positioned with sealing, component placement, and accessibility in mind.</li>
+<li><strong>Surface structure.</strong> The buoy supports the underwater housing while incorporating a navigation light, WiFi communication hardware, and hydrophone protection.</li>
+<li><strong>Complete assembly.</strong> Individual SolidWorks part models and subsystem integration enable evaluation of packaging, fit, component clearances, and the overall mechanical architecture.</li>
+</ul>
+<div class="gallery" id="buoy-gallery"></div>
+</details>
 </div>
-<p class="development-note">
-<span class="status-dot">
-</span> Concept in development — more to come.</p>
+</div>
+</article>
+<article class="project project-left" id="test-fixtures">
+<span class="waypoint" aria-hidden="true"></span>
+<div class="project-card">
+<div class="card-topline"><span>03 / DESIGN + FABRICATION</span><span class="pill">BUILT &amp; TESTED</span></div>
+<div class="project-copy">
+<h3>SD Card &amp; Battery Pack Test Fixtures</h3>
+<p>Two custom test fixtures designed, manufactured, and validated to standardize electrical testing with repeatable, easy-to-use setups for SD cards and battery packs.</p>
+<div class="tags"><span>SolidWorks</span><span>Electrical integration</span><span>Manufacturing</span><span>Functional testing</span></div>
+<details>
+<summary>Explore the fixtures <span aria-hidden="true">+</span></summary>
+<ul class="project-details">
+<li><strong>Component integration.</strong> Existing PCBs, switches, power and Ethernet connectors, SD card hardware, banana jacks, LEDs, and voltage displays are integrated into custom fixture designs.</li>
+<li><strong>Mechanical design.</strong> Custom mounting plates, supports, enclosures, and complete SolidWorks assemblies are supported by detailed part and assembly drawings for manufacturing.</li>
+<li><strong>Electrical documentation.</strong> Wiring diagrams for both fixtures define component connections and support assembly, testing, and future troubleshooting.</li>
+<li><strong>Hands-on fabrication.</strong> Manufacturing and assembly involved drilling, soldering, wiring, component mounting, and mechanical assembly, alongside sourcing and ordering components.</li>
+<li><strong>Validation.</strong> Both completed fixtures underwent electrical continuity and connection checks, functional testing, and verification of SD card and battery pack testing operations.</li>
+</ul>
+</details>
+</div>
+</div>
+<span class="node-label">REPEATABLE TESTING<br>HARDWARE INTEGRATION</span>
+</article>
+<article class="project project-right" id="navbot">
+<span class="waypoint" aria-hidden="true"></span>
+<span class="node-label">AUTONOMOUS NAVIGATION<br>EMBEDDED ROBOTICS</span>
+<div class="project-card">
+<div class="card-topline"><span>04 / ROBOTICS + CONTROLS</span><span class="pill violet">AUTONOMOUS DELIVERY</span></div>
+<div class="project-copy">
+<h3>NavBot &mdash; Autonomous Medication Delivery System</h3>
+<p>An autonomous medical delivery robot designed to reduce repetitive hospital tasks by transporting medication along trained routes, with autonomous navigation and obstacle-safety features.</p>
+<div class="tags"><span>C++</span><span>VEX IQ</span><span>SolidWorks</span><span>Dijkstra&rsquo;s algorithm</span><span>PI/P control</span><span>Sensor integration</span><span>Embedded robotics</span></div>
+<details>
+<summary>Explore the robot <span aria-hidden="true">+</span></summary>
+<ul class="project-details">
+<li><strong>Chassis and drivetrain.</strong> A rigid VEX-based chassis was designed and constructed, with iterations to the frame, wheel supports, and component mounts to improve stability, weight distribution, and driving performance.</li>
+<li><strong>Medication access.</strong> A motor-actuated box uses a hinged lid, lever-style opening mechanism, and secondary motorized lock to securely store medication and automatically provide access at delivery locations.</li>
+<li><strong>Train and replay.</strong> Training and Autonomous modes programmed in C++ let operators manually train routes while recording drive distances and headings, then autonomously replay stored routes.</li>
+<li><strong>Shortest-path planning.</strong> Dijkstra&rsquo;s algorithm uses an adjacency-matrix representation of stored routes to determine and execute the shortest available path between hospital locations.</li>
+<li><strong>Closed-loop control.</strong> Proportional and PI heading control dynamically correct motor output during straight-line driving and turns to reduce drift and improve autonomous path accuracy.</li>
+<li><strong>Sensor feedback.</strong> Distance, bumper, touch, inertial, and motor feedback support obstacle detection, collision response, heading control, and automated medication-box operation.</li>
+</ul>
+</details>
 </div>
 </div>
 </article>
