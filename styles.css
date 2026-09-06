@@ -665,12 +665,20 @@ details[open] summary span {
     font-size:14px
 }
 .contact-primary {
-    display:inline-block;
+    display:inline-flex;
+    align-items:center;
     font-size:clamp(19px,3vw,29px);
-    border-bottom:1px solid #79dedb70;
-    padding:12px 0;
+    border:1px solid #79dedb70;
+    border-radius:6px;
+    background:rgba(121,222,219,.05);
+    padding:14px 22px;
     margin-top:17px;
-    letter-spacing:-.6px
+    letter-spacing:-.6px;
+    transition:background 180ms ease, border-color 180ms ease;
+}
+.contact-primary:hover {
+    background:rgba(121,222,219,.12);
+    border-color:var(--cyan);
 }
 .contact-primary span {
     color:var(--cyan);
