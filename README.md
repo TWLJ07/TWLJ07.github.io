@@ -1,6 +1,6 @@
 # Tucker Johnson - portfolio
 
-Single-page static portfolio for GitHub Pages. Open index.html or serve this directory with any static HTTP server. No build or external dependencies are required.
+Single-page static portfolio for GitHub Pages. Open index.html or serve this directory with any static HTTP server. No build is required. Manrope and Space Grotesk are loaded from Google Fonts with system-font fallbacks and swap rendering.
 
 - index.html: about, drone flight-path projects, experience, PDF downloads, contact, and static project galleries.
 - styles.css: responsive layout, drone illustration animation, reduced-motion support.

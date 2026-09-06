@@ -6,6 +6,8 @@
     --cyan:#79dedb;
     --violet:#ac91e4;
     --line:#25303c;
+    --font-body:"Manrope", "Segoe UI", Arial, sans-serif;
+    --font-display:"Space Grotesk", "Segoe UI", Arial, sans-serif;
     --flight:0
 }
 * {
@@ -19,7 +21,7 @@ body {
     margin:0;
     background:var(--bg);
     color:var(--text);
-    font-family:Arial,Helvetica,sans-serif;
+    font-family:var(--font-body);
     font-size:15px;
     line-height:1.7
 }
@@ -1001,4 +1003,26 @@ footer>span:nth-child(2) {
     .brand { font-size: 11px; gap: 6px; }
     .hero-actions { gap: 18px; }
     .contact h2 { font-size: 39px; }
+}
+
+/* Geometric display lettering with a softer, readable body face. */
+h1, h2, h3, h4, .brand, .intro, .contact-primary {
+    font-family:var(--font-display);
+}
+.eyebrow, .small-label, .card-topline, .visual-label, .node-label, .hero-meta, .scroll-cue {
+    font-family:var(--font-display);
+}
+.project-copy h3, .experience h3 {
+    font-weight:600;
+}
+.project-copy h3 {
+    line-height:1.3;
+}
+.project-copy p, .experience p, .foundation li {
+    font-size:13px;
+    line-height:1.9;
+}
+@media (max-width:650px) {
+    h1 { font-size:clamp(48px, 14vw, 64px); }
+    .hero-meta { flex-wrap:wrap; }
 }
