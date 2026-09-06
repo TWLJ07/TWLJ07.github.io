@@ -662,7 +662,7 @@ details[open] summary span {
 .contact .muted {
     font-size:14px
 }
-.email-link {
+.contact-primary {
     display:inline-block;
     font-size:clamp(19px,3vw,29px);
     border-bottom:1px solid #79dedb70;
@@ -670,12 +670,13 @@ details[open] summary span {
     margin-top:17px;
     letter-spacing:-.6px
 }
-.email-link span {
+.contact-primary span {
     color:var(--cyan);
     margin-left:35px
 }
 .contact-links {
     display:flex;
+    flex-wrap:wrap;
     gap:30px;
     font-size:12px;
     color:var(--muted);
@@ -970,7 +971,7 @@ h2 {
 .contact-links {
     gap:25px
 }
-.email-link span {
+.contact-primary span {
     margin-left:12px
 }
 footer {
